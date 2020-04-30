@@ -1,0 +1,103 @@
+#game-panel {
+  display: flex;
+  justify-content: center;
+}
+
+#info-panel {
+  display: flex;
+  padding-bottom: 8px;
+
+  #move-list-panel {
+    textarea {
+      border: 2px gray solid;
+      font-family: SansSerif;
+      font-size: 14pt;
+      background: lavender;
+      width: 75%;
+      height: 100%;
+    }
+  }
+}
+
+#board {
+  margin-right: 15px;
+  border-collapse: collapse;
+
+  td {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+  }
+
+  .even {
+    background-color: lavender;
+
+    &.candidate-move {
+      background-color: yellow;
+    }
+  }
+
+  .odd {
+    background-color: lightgray;
+    &.candidate-move {
+      background-color: yellow;
+    }
+  }
+
+  .piece {
+    display: flex;
+    justify-content: center;
+    &.white {
+      &.knight:before {
+        background-image: url("../images/wknight.png");
+      }
+      &.king:before {
+        background-image: url("../images/wking.png");
+      }
+      &.pawn:before {
+        background-image: url("../images/wpawn.png");
+      }
+      &.bishop:before {
+        background-image: url("../images/wbishop.png");
+      }
+      &.rook:before {
+        background-image: url("../images/wrook.png");
+      }
+      &.queen:before {
+        background-image: url("../images/wqueen.png");
+      }
+    }
+    &.black {
+      color: lightgray;
+    }
+    &.knight:before {
+      background-image: url("../images/knight.png");
+    }
+    &.king:before {
+      background-image: url("../images/king.png");
+    }
+    &.king:before, &.knight:before, &.pawn:before, &.bishop:before, &.rook:before, &.queen:before {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: 35px;
+      width: 80%;
+      height: 80%;
+      position: absolute;
+      background-position: center;
+      top: 7px;
+    }
+    &.bishop:before {
+      background-image: url("../images/bishop.png");
+    }
+    &.rook:before {
+      background-image: url("../images/rook.png");
+    }
+    &.pawn:before {
+      background-image: url("../images/pawn.png");
+    }
+    &.queen:before {
+      background-image: url("../images/queen.png");
+    }
+  }
+}

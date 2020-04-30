@@ -1,6 +1,7 @@
 # Simple Javascript Chess
 
-This is a javascript chess game that implements most of the rules of chess.
+This is a javascript chess game that implements most of the rules of chess. You can view this in 
+action here https://master.d17tprhn53kw3b.amplifyapp.com/
 
 ## Getting Started
 

@@ -1,0 +1,71 @@
+#game-panel {
+  display: flex;
+  justify-content: center; }
+
+#info-panel {
+  display: flex;
+  padding-bottom: 8px; }
+  #info-panel #move-list-panel textarea {
+    border: 2px gray solid;
+    font-family: SansSerif;
+    font-size: 14pt;
+    background: lavender;
+    width: 75%;
+    height: 100%; }
+
+#board {
+  margin-right: 15px;
+  border-collapse: collapse; }
+  #board td {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    text-align: center; }
+  #board .even {
+    background-color: lavender; }
+    #board .even.candidate-move {
+      background-color: yellow; }
+  #board .odd {
+    background-color: lightgray; }
+    #board .odd.candidate-move {
+      background-color: yellow; }
+  #board .piece {
+    display: flex;
+    justify-content: center; }
+    #board .piece.white.knight:before {
+      background-image: url("../images/wknight.png"); }
+    #board .piece.white.king:before {
+      background-image: url("../images/wking.png"); }
+    #board .piece.white.pawn:before {
+      background-image: url("../images/wpawn.png"); }
+    #board .piece.white.bishop:before {
+      background-image: url("../images/wbishop.png"); }
+    #board .piece.white.rook:before {
+      background-image: url("../images/wrook.png"); }
+    #board .piece.white.queen:before {
+      background-image: url("../images/wqueen.png"); }
+    #board .piece.black {
+      color: lightgray; }
+    #board .piece.knight:before {
+      background-image: url("../images/knight.png"); }
+    #board .piece.king:before {
+      background-image: url("../images/king.png"); }
+    #board .piece.king:before, #board .piece.knight:before, #board .piece.pawn:before, #board .piece.bishop:before, #board .piece.rook:before, #board .piece.queen:before {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: 35px;
+      width: 80%;
+      height: 80%;
+      position: absolute;
+      background-position: center;
+      top: 7px; }
+    #board .piece.bishop:before {
+      background-image: url("../images/bishop.png"); }
+    #board .piece.rook:before {
+      background-image: url("../images/rook.png"); }
+    #board .piece.pawn:before {
+      background-image: url("../images/pawn.png"); }
+    #board .piece.queen:before {
+      background-image: url("../images/queen.png"); }
+
+/*# sourceMappingURL=chess.css.map */

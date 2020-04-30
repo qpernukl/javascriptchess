@@ -2,8 +2,6 @@
 /node_modules/
 /chessapp.iml
 /package-lock.json
-/images/
-/css/chess.css
 /css/chess.css.map
 /css/.sass-cache/5099e6cbd2a939a11b4784eb5aa1a1aa8929179d/chess.scssc
 /yarn.lock
